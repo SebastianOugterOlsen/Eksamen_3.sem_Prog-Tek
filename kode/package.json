@@ -1,16 +1,21 @@
 {
-  "name": "kode",
-  "version": "0.0.0",
+  "name": "eksamen",
+  "version": "1.0.0",
+  "description": "Eksamensopgave i programmering og teknologi, datamatiker 3. semester.",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "nodemon ./bin/www"
   },
+  "author": "Sebastian Ougter Olsen",
   "dependencies": {
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "express": "~4.16.0",
     "hbs": "~4.0.1",
     "http-errors": "~1.6.2",
-    "morgan": "~1.9.0"
+    "mongodb": "^3.1.10",
+    "mongo": "^0.1.0",
+    "morgan": "~1.9.0",
+    "nodemon": "^1.18.7"
   }
 }
