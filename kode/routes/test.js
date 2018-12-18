@@ -1,6 +1,12 @@
 var express = require('express');
 var router = express.Router();
 
+/* GET test page. */
+router.get('/', function(req, res, next) {
+    res.render('test', { title: 'Express' });
+  });
+  
+
 // Inkluderer database og angiver port til forbindelse
 var MongoClient = require('mongodb').MongoClient;
 var url = "mongodb://localhost:27017/";
@@ -22,3 +28,5 @@ router.get('/', function (req, res, next) { // Route handler på roden
     });
   });
 });
+
+module.exports = router;
