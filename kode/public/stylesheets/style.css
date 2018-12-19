@@ -1,8 +1,140 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 30px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-shadow: 0 0 2px rgb(185, 185, 185);
+  background-color: rgb(255, 255, 255);
+}
+table {
+  border-collapse: collapse; /* Smelter sammen til én border */
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 6px rgb(184, 184, 184);
+}
+th, td {
+  border: 1px solid rgb(0, 0, 0);
+  text-align: left;
+  padding: 10px;
+}
+th {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+td {
+  color: rgb(0, 0, 0);
+}
+a:link, a:visited {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  background-color: #ffffff;
+  padding: 14px 25px;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid black;
+  box-shadow: 2px 2px 6px rgb(184, 184, 184);
+}
+a:hover, a:active {
+
+  color: white;
+  background-color: rgb(109, 109, 109);
+
 }
 
-a {
-  color: #00B7FF;
+.tilføj:before{
+  font-family: "FontAwesome";
+  content: "\f067"; /* add plus icon */
 }
+
+#gaaTilStart{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+
+}
+/* ^^ konti.hbs ^^ */
+
+form {
+  margin: 10px;
+}
+.label {
+  font-weight: bold;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: rgb(0, 0, 0);
+}
+.inputField {
+  padding: 8px;
+  margin: 5px;
+  min-width: 200px;
+  background-color: rgb(249, 253, 249);
+  border: 1px rgb(0, 0, 0) solid;
+  border-radius: 5px;
+}
+.submitBtn {
+  padding: 15px;
+  min-width: 225px;
+  background-color: rgb(31, 31, 31);
+  border: 0;
+  border-radius: 7px;
+  color: rgb(231, 241, 231);
+  font-size: 16px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.submitBtn:hover {
+  background-color: rgb(0, 0, 0);
+}
+.deleteBtn {
+  padding: 10px;
+  background-color: rgb(31, 31, 31);
+  border: 0;
+  border-radius: 7px;
+  color: rgb(231, 241, 231);
+  font-size: 14px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.deleteBtn:hover {
+  background-color: rgb(0, 0, 0);
+}
+#mainHeading {
+  display: none;
+}
+#mainParagraph {
+  display: none;
+}
+#mainContent {
+  color: red;
+  background-color: rgb(247, 247, 247);
+  width: 700px;
+  padding: 5px;
+  border: 1px rgb(0, 0, 0) solid;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgb(184, 184, 184);
+  display: none;
+}
+.formDiv {
+  float: left;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(247, 247, 247);
+  border: 1px rgb(0, 0, 0) solid;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgb(184, 184, 184);
+}
+#dynamicDataDiv {
+  float: left;
+  margin: 10px;
+  color: rgb(0, 0, 0);
+  margin-left: 25px;
+  background-color: rgb(247, 247, 247);
+  width: 300px;
+  padding: 10px;
+  padding-left: 20px;
+  border: 1px rgb(0, 0, 0) solid;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgb(184, 184, 184);
+}
+
+
