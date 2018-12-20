@@ -1,0 +1,46 @@
+<!--
+    Formen i denne HTML-fil muliggør, at der kan tilføjes nye documents
+    til den valgte collection i den lokale database.
+-->
+
+<!-- HTML5 -->
+<!DOCTYPE html>
+<html lang="da-DK">
+<head>
+    <meta charset="UTF-8">
+    <title>CryptopBank | Opret ny konto til bruger i systemet</title>
+    <!-- Meta Content -->
+    <meta name="description" content="Opret ny konto i systemet.">
+    <meta name="author" content="Sebastian Ougter Olsen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styling -->
+    <link rel="stylesheet" href="../stylesheets/style.css">
+</head>
+<body>
+    <h1>Opret ny konto til bruger i systemet</h1>
+    <p>Udfyld formularen herunder for at tilføje en konto til en bruger i systemet.</p>
+    <p>Såfremt brugeren har en konto i banken, tilføjes der en ekstra konto</p>
+    <div class="formDiv">
+        <!-- POST request der håndteres i konti.js -->
+        <form action="../konto/post" method="post">
+           
+            <label class="label">ID</label>
+            <input class="inputField" type="number" placeholder="F.eks. 10" name="Uid" required><br>
+           
+            <label class="label">Kontonummer</label>
+            <input class="inputField" type="number" placeholder="F.eks. 10" name="kontonummer" required><br>
+           
+            <label class="label">Valutatype</label>
+            <input class="inputField" type="text" placeholder="F.eks. 123456" name="valutatype" required><br>
+
+            <label class="label">Saldo</label>
+            <input class="inputField" type="number" placeholder="F.eks. 123456" name="saldo" required><br>
+
+            <button class="submitBtn" type="submit">Opret konto</button>
+        </form>
+    </div>
+    
+<a id="gaaTilStart" href="/">Gå til Start-siden</a>
+
+</body>
+</html>

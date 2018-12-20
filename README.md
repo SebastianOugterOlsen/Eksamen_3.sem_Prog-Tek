@@ -1,6 +1,4 @@
 
- 2018 DAT Programmering og Teknologi Eksamen
-
 Afviklet: d. 20/12-2018.\
 Sted: EASJ, Næstved.\
 Undervisere: András Ács (ANAC), Karsten Vandrup (KAVA).\

@@ -8,7 +8,7 @@
 <html lang="da-DK">
 <head>
     <meta charset="UTF-8">
-    <title>BEC Bank | Opret ny bruger i systemet</title>
+    <title>CryptopBank | Opret ny bruger i systemet</title>
     <!-- Meta Content -->
     <meta name="description" content="Opret ny bruger i systemet.">
     <meta name="author" content="Sebastian Ougter Olsen">
@@ -27,20 +27,18 @@
             <label class="label">ID</label>
             <input class="inputField" type="number" placeholder="F.eks. 10" name="Uid" required><br>
            
-            <label class="label">Medarbejder i banken</label>
-            <input type="radio" name="medarbejder" value="true" checked> Ja<br>
-            <input type="radio" name="medarbejder" value="false"> Nej<br>
-            
-            <label class="label">Kunde i banken</label>
-            <input type="radio" name="kunde" value="true" checked> Ja<br>
-            <input type="radio" name="kunde" value="false"> Nej<br>
-           
-            <label class="label">Fulde navn</label>
-            <input class="inputField" type="text" placeholder="F.eks. Frans Fransen" name="fuldenavn" required><br>
-           
             <label class="label">Kodeord</label>
             <input class="inputField" type="password" placeholder="Vælg et kodeord" name="kodeord" required><br>
-            <br>
+
+            <label class="label">CPR-nummer</label>
+            <input class="inputField" type="number" placeholder="F.eks. 123456" name="cprnummer" required><br>
+
+            <label class="label">Fulde navn</label>
+            <input class="inputField" type="text" placeholder="F.eks. Anders And" name="fuldenavn" required><br>
+           
+            <label class="label">Adresse</label>
+            <input class="inputField" type="text" placeholder="F.eks. Femøvej 3, 4700 Næstved" name="adresse" required><br>
+
             <button class="submitBtn" type="submit">Opret bruger</button>
         </form>
     </div>

@@ -1,0 +1,32 @@
+Hvilken information om de 2 servere skal du kende/definere, for at kunne etablere en socketforbindelse imellem dem?
+
+TCP/IP-adressen   lag 4
+
+
+
+
+Og hvilken protokol vil du bruge til at overføre data? 
+
+
+Havde det været ligegyldig data ville jeg have brugt FTP protokollen,  da den er gammel og derfor meget udbredt
+
+Men da det er personfølsomme data vil jeg bruge FTPS som har fået et ekstra lag sikkerhed med SSL som krypterer informationen mellem afsender og modtager.
+Secure Socket Layer
+
+TCP Transmission Control Protocol. 
+En pakke der går tabt bliver automatisk forsøgt afsendt igen.
+
+
+I hvilket lag i OSI 7-lags modellen er denne/disse protokoller beskrevet?
+
+FTPS 7
+TCP 4
+
+
+
+
+
+
+
+
+

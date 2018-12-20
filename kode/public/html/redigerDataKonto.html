@@ -19,27 +19,24 @@
 </head>
 <body>
     <h1>Rediger bruger/konto i banksystemet</h1>
-    <p>Udfyld formularen herunder for at redigere en specifik bruger i systemet.</p>
+    <p>Udfyld formularen herunder for at redigere en specifik konto i systemet.</p>
     <div class="formDiv">
         <!-- POST/PUT request der håndteres i konti.js -->
-        <form id="redigerDataForm" action="../konti/put" method="post">
+        <form id="redigerDataForm" action="../konto/put" method="post">
                 
             <label class="label">ID</label>
             <input class="inputField" type="number" placeholder="F.eks. 10" name="Uid" required><br>
            
-            <label class="label">Kodeord</label>
-            <input class="inputField" type="password" placeholder="Vælg et kodeord" name="kodeord" required><br>
-
-            <label class="label">CPR-nummer</label>
-            <input class="inputField" type="number" placeholder="F.eks. 123456" name="cprnummer" required><br>
-
-            <label class="label">Fulde navn</label>
-            <input class="inputField" type="text" placeholder="F.eks. Anders And" name="fuldenavn" required><br>
+            <label class="label">Kontonummer</label>
+            <input class="inputField" type="number" placeholder="F.eks. 10" name="kontonummer" required><br>
            
-            <label class="label">Adresse</label>
-            <input class="inputField" type="text" placeholder="F.eks. Femøvej 3, 4700 Næstved" name="adresse" required><br>
+            <label class="label">Valutatype</label>
+            <input class="inputField" type="text" placeholder="F.eks. 123456" name="valutatype" required><br>
 
-            <button class="submitBtn" type="submit">Opdater bruger</button>
+            <label class="label">Saldo</label>
+            <input class="inputField" type="number" placeholder="F.eks. 123456" name="saldo" required><br>
+
+            <button class="submitBtn" type="submit">Opdater konto</button>
         </form>
     </div>
 

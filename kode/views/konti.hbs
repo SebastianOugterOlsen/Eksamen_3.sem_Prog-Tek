@@ -1,33 +1,26 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<h1>Tabel over alle registrerede konti i systemet</h1>
+<h1>Tabel over alle registrerede kunder i systemet</h1>
 <table>
     <tr>
-          <th>seb</th>
         <th>ID</th>
-        <th>Medarbejder</th>
-        <th>Kunde</th>
-        <th>Fulde navn</th>
-        <th>Kontonummer</th>
-        <th>Kontonavn</th>
-        <th>Saldo (DKK)</th>
-        <th>Rente (%)</th>
         <th>Kodeord</th>
+        <th>CPR-nummer</th>
+        <th>Fulde navn</th>
+        <th>Adresse</th>
+
         <th>Håndter konto</th>
     </tr>
     <!-- For-each-loop, der gennemløber objektet "konti" for diverse key/values -->
     {{#each konti}}
     <tr>
-       <td>{{seb}}</td>
+
         <td>{{Uid}}</td>
-        <td>{{medarbejder}}</td>
-        <td>{{kunde}}</td>
-        <td>{{fuldenavn}}</td>
-        <td>{{kontonummer}}</td>
-        <td>{{kontonavn}}</td>
-        <td>{{saldo}}</td>
-        <td>{{rente}}</td>
         <td>{{kodeord}}</td>
+        <td>{{cprnummer}}</td>
+        <td>{{fuldenavn}}</td>
+        <td>{{adresse}}</td>
+    
         <td style="text-align: center;">
             <form action="/konti/delete/{{Uid}}" method="POST">
                 <button class="deleteBtn" id= "slet" >  Slet konto</button>
@@ -40,7 +33,47 @@
 <!-- Navigation -->
 <nav>
         <a href="/html/opretNyBruger.html" id= "tilføj" >  Opret ny bruger i systemet</a>
-        <a href="/html/redigerData.html" id= "rediger" >  Rediger data for konto/bruger i systemet</a>
+        <a href="/html/redigerData.html" id= "rediger" >  Rediger data for bruger i systemet</a>
+</nav>
+
+
+
+<!-- ^^ Bruger ^^ -->
+
+
+<h1>Tabel over alle registrerede kontoer i systemet</h1>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Kontonummer</th>
+        <th>Valutatype</th>
+        <th>Saldo</th>
+
+        <th>Håndter konto</th>
+    </tr>
+    <!-- For-each-loop, der gennemløber objektet "konti" for diverse key/values -->
+    {{#each konto}}
+    <tr>
+
+        <td>{{Uid}}</td>
+        <td>{{kontonummer}}</td>
+        <td>{{valutatype}}</td>
+        <td>{{saldo}}</td>
+
+    
+        <td style="text-align: center;">
+            <form action="/konto/delete/{{Uid}}" method="POST">
+                <button class="deleteBtn" id= "slet" >  Slet konto</button>
+            </form>
+        </td>
+    </tr>
+    {{/each}}
+</table>
+<br>
+<!-- Navigation -->
+<nav>
+        <a href="/html/opretNyKonto.html" id= "tilføj" >  Opret ny konto til bruger i systemet</a>
+        <a href="/html/redigerDataKonto.html" id= "rediger" >  Rediger data for konto i systemet</a>
 </nav>
 
 <a id="gaaTilStart" href="/">Gå til Start-siden</a>

@@ -1,0 +1,10 @@
+hvad findes der af firewalls 
+
+software 
+hardware 
+
+
+
+packet filtering holder øje med at alle kriterier er opfyldt 
+hvis problemer bliver der lukket af
+
