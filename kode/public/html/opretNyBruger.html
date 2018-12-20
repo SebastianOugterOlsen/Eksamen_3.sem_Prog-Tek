@@ -23,16 +23,21 @@
     <div class="formDiv">
         <!-- POST request der håndteres i konti.js -->
         <form action="../konti/post" method="post">
+           
             <label class="label">ID</label>
             <input class="inputField" type="number" placeholder="F.eks. 10" name="Uid" required><br>
+           
             <label class="label">Medarbejder i banken</label>
             <input type="radio" name="medarbejder" value="true" checked> Ja<br>
             <input type="radio" name="medarbejder" value="false"> Nej<br>
+            
             <label class="label">Kunde i banken</label>
             <input type="radio" name="kunde" value="true" checked> Ja<br>
             <input type="radio" name="kunde" value="false"> Nej<br>
+           
             <label class="label">Fulde navn</label>
             <input class="inputField" type="text" placeholder="F.eks. Frans Fransen" name="fuldenavn" required><br>
+           
             <label class="label">Kodeord</label>
             <input class="inputField" type="password" placeholder="Vælg et kodeord" name="kodeord" required><br>
             <br>

@@ -40,9 +40,18 @@ a:hover, a:active {
 
 }
 
-.tilføj:before{
+#tilføj:before{
   font-family: "FontAwesome";
-  content: "\f067"; /* add plus icon */
+  content: "\f0fe"; /* add plus icon */
+}
+#rediger:before{
+  font-family: "FontAwesome";
+  content: "\f044"; /* add edit icon */
+}
+#slet:before{
+  font-family: "FontAwesome";
+  content: "\f12d"; /* add delete icon */
+  color: white;
 }
 
 #gaaTilStart{
@@ -50,10 +59,9 @@ a:hover, a:active {
   bottom: 0;
   left: 0;
   right: 0;
-  
-
 }
 /* ^^ konti.hbs ^^ */
+
 
 form {
   margin: 10px;
@@ -110,7 +118,6 @@ form {
   width: 700px;
   padding: 5px;
   border: 1px rgb(0, 0, 0) solid;
-  border-radius: 10px;
   box-shadow: 2px 2px 6px rgb(184, 184, 184);
   display: none;
 }
@@ -120,20 +127,6 @@ form {
   margin: 10px;
   background-color: rgb(247, 247, 247);
   border: 1px rgb(0, 0, 0) solid;
-  border-radius: 10px;
-  box-shadow: 2px 2px 6px rgb(184, 184, 184);
-}
-#dynamicDataDiv {
-  float: left;
-  margin: 10px;
-  color: rgb(0, 0, 0);
-  margin-left: 25px;
-  background-color: rgb(247, 247, 247);
-  width: 300px;
-  padding: 10px;
-  padding-left: 20px;
-  border: 1px rgb(0, 0, 0) solid;
-  border-radius: 10px;
   box-shadow: 2px 2px 6px rgb(184, 184, 184);
 }
 

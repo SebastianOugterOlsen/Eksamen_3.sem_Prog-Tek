@@ -3,6 +3,7 @@
 <h1>Tabel over alle registrerede konti i systemet</h1>
 <table>
     <tr>
+          <th>seb</th>
         <th>ID</th>
         <th>Medarbejder</th>
         <th>Kunde</th>
@@ -17,6 +18,7 @@
     <!-- For-each-loop, der gennemløber objektet "konti" for diverse key/values -->
     {{#each konti}}
     <tr>
+       <td>{{seb}}</td>
         <td>{{Uid}}</td>
         <td>{{medarbejder}}</td>
         <td>{{kunde}}</td>
@@ -28,7 +30,7 @@
         <td>{{kodeord}}</td>
         <td style="text-align: center;">
             <form action="/konti/delete/{{Uid}}" method="POST">
-                <button class="deleteBtn" >Slet konto</button>
+                <button class="deleteBtn" id= "slet" >  Slet konto</button>
             </form>
         </td>
     </tr>
@@ -37,8 +39,8 @@
 <br>
 <!-- Navigation -->
 <nav>
-        <a href="/html/opretNyBruger.html" class= "tilføj" > Opret ny bruger i systemet</a>
-        <a href="/html/redigerData.html" >Rediger data for konto/bruger i systemet</a>
+        <a href="/html/opretNyBruger.html" id= "tilføj" >  Opret ny bruger i systemet</a>
+        <a href="/html/redigerData.html" id= "rediger" >  Rediger data for konto/bruger i systemet</a>
 </nav>
 
 <a id="gaaTilStart" href="/">Gå til Start-siden</a>
